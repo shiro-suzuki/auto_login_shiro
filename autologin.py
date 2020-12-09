@@ -10,23 +10,23 @@ browser.get(url)
 
 sleep(1)
 
-# loginフォームのフォームの含まれるiframe要素を取得する
+# get login form emelent about iframe
 elem_login_iframe = browser.find_element_by_xpath("//*[@id='gsft_main']")
 
-# 指定したiframe内へ移動
+# move to iframe
 browser.switch_to_frame(elem_login_iframe)
 
-# ユーザー名フォームの要素取得＋入力
+# user form get and send
 elem_username = browser.find_element_by_id('user_name')
 elem_username.send_keys('test.tester1')
-# パスワードフォームの要素取得＋入力
+# password form get and send
 elem_password = browser.find_element_by_id('user_password')
 elem_password.send_keys('adminpass')
 
 # sleep
 sleep(1)
 
-# ログインボタンの要素取得＋クリック
+# click
 elem_login_btn = browser.find_element_by_id('sysverb_login')
 elem_login_btn.click()
 
@@ -54,7 +54,3 @@ elem_submit.click()
 sleep(1)
 
 browser.quit()
-
-# Newボタンの要素取得＋クリック
-# elem_incident_newbtn = browser.find_element_by_id('sysverb_new')
-# elem_incident_newbtn.click()

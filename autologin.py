@@ -51,7 +51,7 @@ elem_shortdesc.send_keys(send_shortdesc)
 elem_submit = browser.find_element_by_id('sysverb_insert_bottom')
 elem_submit.click()
 
-sleep(3)
+sleep(1)
 
 browser.quit()
 

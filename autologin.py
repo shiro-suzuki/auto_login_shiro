@@ -2,7 +2,8 @@ from selenium import webdriver
 from time import sleep
 import datetime
 
-url = 'https://dev104731.service-now.com/'
+url = 'https://dev72709.service-now.com/'
+# url = 'https://dev104731.service-now.com/'
 # url = 'https://scraping-for-beginner.herokuapp.com/login_page'
 
 browser = webdriver.Chrome()
